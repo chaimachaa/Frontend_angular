@@ -1,22 +1,22 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
- name: frontend_angular 
+ name: frontend-angular 
 spec: 
  replicas: 2
  strategy: 
   type: RollingUpdate 
  selector: 
   matchLabels: 
-   app: frontend_angular 
+   app: frontend-angular 
  template: 
    metadata: 
     labels: 
-     app: frontend_angular
+     app: frontend-angular
      env: prod 
    spec: 
     containers: 
-    - name: frontend_angular 
+    - name: frontend-angular 
       image: chaimakh/frontend_angular:latest
       ports:
       - containerPort: 4200
