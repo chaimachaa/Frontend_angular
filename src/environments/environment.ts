@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  kanbanAppUrl: 'http://172.29.12.51:32221/api/'
+  kanbanAppUrl: 'http://172.16.154.11:32221/api/'
 };
 
 /*
